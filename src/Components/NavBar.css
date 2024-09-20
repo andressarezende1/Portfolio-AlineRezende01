@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D47290;
+    height: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    font-size: 35px; 
+    font-family: 'Mervale Script';
+    color: white;
+    margin-left: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 150px;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.agendamento {
+    color: white;
+    background-color: #C14D70;
+    padding: 10px; /* Diminuído */
+    border-radius: 10px; /* Diminuído */
+    font-family: 'Julius Sans One';
+    cursor: pointer;
+    font-size: 12px; /* Diminuído */
+}
+
+.agendamento a {
+    text-decoration: none; 
+}
+
+.agendamento:hover {
+    border: #ebdfdf 1px solid; /* Se preferir aplicar a borda na div */
+}
+
+@media (max-width: 768px) { /* Corrigido para max-width */
+    .navbar {
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 20px; /* Diminuído */
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        font-size: 8px;
+    }
+
+    .agendamento {
+        padding: 3px; /* Diminuído */
+        font-size: 8px; /* Diminuído */
+        margin-right: -180px;
+    }
+}
+
+

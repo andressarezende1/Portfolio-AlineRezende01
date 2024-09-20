@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.apresentar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: white; /* Cor rosa claro */
+    padding-left: -100px;
+    gap: 90px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vw;
+    height: 350px;
+    gap: 20px;
+}
+
+.titulo {
+    color: black;
+    font-size: 35px;
+    text-align: left;
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    font-family: "Playfair Display", serif; 
+}
+
+.titulo::after {
+    content: ''; /* Cria um pseudo-elemento vazio */
+    display: block; /* Faz a linha ocupar uma nova linha */
+    width: 80%; /* Faz a linha ter a largura do texto */
+    height: 5px; /* Espessura da linha */
+    background-color: #C14D70; /* Altere para a cor desejada */
+    position: absolute; /* Para posicionar a linha */
+    left: 0; /* Alinha à esquerda */
+    bottom: -5px; /* Espaço entre o texto e a linha */
+    border-radius: 70px;
+   
+}
+
+p {
+    font-family: 'Newsreader'; 
+}
+
+
+.imagem {
+   
+    background-image: url('../../../foto.jpg');
+    background-size: cover; /* Preenche o espaço sem cortar a imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    width: 20vw;
+    height: 300px;
+}
+
+    @media (max-width: 768px) { /* Corrigido para max-width */
+    
+        .apresentar {
+            position: relative;
+            box-sizing: border-box;
+            height: 250px;
+        }
+        .titulo {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    
+        .imagem {
+            width: 30vw;
+            height: 200px;
+            margin-left: -40px;
+            
+        }
+    }
+    
