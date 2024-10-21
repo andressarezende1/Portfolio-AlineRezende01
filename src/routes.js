@@ -1,7 +1,7 @@
 // routes.js
 import { Route, Routes } from "react-router-dom";
 import Agendamento from "./Components/Agendamento";
-import Container from "./Components/Pages//Container/Container";
+import Container from "./Components/Container";
 
 function AppRoutes() {
     return (
@@ -13,3 +13,4 @@ function AppRoutes() {
 }
 
 export default AppRoutes;
+

@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prociono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estlização na seção 01*/
+
+.apresentar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: white; 
+    padding: 40px 20px 20px 20px;
+    gap: 90px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vw;
+    height: 350px;
+    gap: 20px;
+}
+
+.frase {
+    color: black;
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding-top: 40px;
+    
+}
+.titulo {
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    position: relative; 
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 0px 0px 20px;
+    
+}
+
+.titulo::after {
+    content: ''; 
+    display: block; 
+    width: 30vw; 
+    height: 5px; 
+    background-color: #C14D70;
+    position: absolute; 
+    bottom: -5px; 
+    border-radius: 70px;
+    
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 15px; 
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.imagem {
+    background-image: url('../img/foto.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 20vw;
+    height: 420px;
+}
+
+/*Estilização da seção 01 - Textos */
+.apresentar_servicos {
+    background-color: #FB99B6; 
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+}
+
+h3 {
+    font-size: 17px;
+    color: white;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h4 {
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+}
+
+    @media (max-width: 768px) { 
+    
+        .apresentar {
+            
+            height: 300px;
+            padding-top: 20px;
+            gap: 50px;
+        }
+        
+        .texto {
+            width: 80vw;
+        }
+
+        .titulo, .frase {
+            font-size: 20px;
+        }
+
+        .subtitulo {
+            font-size: 13px;
+        }
+
+        .titulo::after {
+            width: 50vw;
+        }
+    
+        .imagem {
+            width: 30vw;
+            height: 200px;
+            margin-left: -40px;
+            
+        }
+
+        .apresentar_servicos{
+            height: 80px;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        h3{
+            font-size: 13px;
+        }
+    
+        h4{
+            font-size: 10px;
+        }
+}
+    /* Estilização da seção 02 - Serviços */
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+}
+
+.p {
+    text-align: left;
+    background-color: white;
+    font-size: 35px;
+    padding-left: 30px;
+    color: black;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.servico1, .servico2, .servico3, .servico4 {
+    gap: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.descricao1, .descricao2, .descricao3, .descricao4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 250px;
+    gap: 90px;
+    background-color: white;
+}
+
+.descricao {
+    list-style-type: disc; 
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4 {
+    width: 270px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem1 {
+    background-image: url(../img/limpeza.jpg);
+}
+
+.imagem2 {
+    background-image: url(../img/restaura.jpg);
+}
+
+.imagem3 {
+    background-image: url(../img/clareamento.jpeg);
+}
+
+.imagem4{
+    background-image: url(../img/cirugia.jpg);
+}
+
+@media (max-width: 769px) {
+    .servico1, .servico2, .servico3, .servico4 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 0;
+        height: 400px;
+    }
+
+    .p {
+        font-size: 20px;
+        padding: 50px;
+    }
+
+    .descricao {
+        font-size: 18px;
+    }
+
+    .descricao1, .descricao2, .descricao3, .descricao4 {
+        font-size: 1px; 
+        text-align: center;
+        width: 80vw; 
+    }
+
+    
+}
+
+/* Estlização da seção 03 - Contato*/
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    border-top: #c90b44 2px solid;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    padding-top: -80px;
+}
+
+.men {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    padding: 20px 0px 0px 20px;
+}
+.contato {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB99B6;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.meioscontato {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    list-style: none; 
+    padding: 0; 
+}
+
+.meioscontato li {
+    display: flex; 
+    align-items: center; 
+    background-color: white;
+    border-radius: 30px;
+    width: 28vw;
+    padding: 10px; 
+    margin: 5px 0;
+    height: 50px;
+}
+
+.meioscontato a {
+    text-decoration: none;
+    color: black;
+    display: flex; /* Flex para o alinhamento do ícone e texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.icons {
+    font-size: 23px;
+    color: black;
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+
+@media (max-width: 769px){
+
+    .rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top:80px;
+    }
+
+    .mensagem{
+        width: 70vw;
+    }
+    .men {
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    .contato {
+        width: 70vw;
+        
+    }
+
+    .meioscontato {
+        font-size: 10px;
+    }
+    .meioscontato li {
+        width: 55vw;
+        height: 35px;
+    }
+
+    .icons {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+

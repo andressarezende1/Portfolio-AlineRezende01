@@ -1,5 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    background-color: aqua;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f193b0;
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.tituloA {
+    font-size: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A73155;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-inputs label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-inputs input,
+.form-inputs textarea {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.form-inputs input:focus,
+.form-inputs textarea:focus {
+    border-color: #A73155;
+}
+
+.form-inputs select {
+    width: 100%;
+    height: 40px; /* Altura do select */
+    margin-bottom: 15px; /* Espaçamento abaixo do select */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.button-container {
+    display: flex; /* Alinha os itens em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+button {
+    background-color: #fff;
+    color: #A73155;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #eaeaea;
 }
