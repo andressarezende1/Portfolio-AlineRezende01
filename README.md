@@ -13,7 +13,7 @@ O primeiro passo foi desenvolver um protótipo para as versões Web e Mobile no 
 <br> 3️⃣ Por fim, uma frase atraente e os meios de contato com o profissional.
 
 ##
-<h3>Design e Layout 📃 </h3>
+<h3>📃 Design e Layout  </h3>
 O design é moderno e acolhedor, utilizando uma paleta de cores harmoniosa do tom de rosa e tipografia legível. O layout é responsivo, proporcionando uma boa experiência de uso em dispositivos móveis e desktop.
 
 ##
